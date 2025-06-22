@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="icon" href="./assets/img/logo.png" type="image/png" />
+
+    <title>FastBite - Comida Rápida Deliciosa</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+      <div class="loader-content">
+        <div class="loader-logo"><span>Fast</span><span>Bite</span></div>
+        <div class="loader-spinner">
+          <div class="spinner-circle"></div>
+          <div class="spinner-circle"></div>
+          <div class="spinner-circle"></div>
+        </div>
+        <p class="loader-text">Cargando deliciosas opciones...</p>
+      </div>
+    </div>
+
+    <!-- Header/Navbar -->
+    <header class="header">
+      <div class="container">
+        <a href="#" class="logo">Fast<span>Bite</span></a>
+        <nav class="navbar">
+          <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Inicio</a></li>
+            <li><a href="menu.html" class="nav-link">Menú</a></li>
+            <li><a href="#testimonials" class="nav-link">Testimonios</a></li>
+            <li><a href="#pricing" class="nav-link">Ofertas</a></li>
+            <li><a href="#contact" class="nav-link">Contacto</a></li>
+            <li class="nav-btns">
+              <a href="login.html" class="btn btn-outline">Iniciar Sesión</a>
+              <a href="#" class="btn btn-primary">Ordenar Ahora</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="hamburger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Comida rápida <span>deliciosa</span> en minutos
+          </h1>
+          <p class="hero-subtitle">
+            Disfruta de nuestros perros calientes gourmet y hamburguesas
+            artesanales entregados en tu puerta en tiempo récord.
+          </p>
+          <div class="hero-btns">
+            <a href="#" class="btn btn-primary"
+              >Ordenar Ahora <i class="fas fa-arrow-right"></i
+            ></a>
+            <a href="menu.html" class="btn btn-outline"
+              >Ver Menú <i class="fas fa-book-open"></i
+            ></a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <h3>10,000+</h3>
+              <p>Clientes satisfechos</p>
+            </div>
+            <div class="stat-item">
+              <h3>500+</h3>
+              <p>Reseñas 5 estrellas</p>
+            </div>
+            <div class="stat-item">
+              <h3>30 min</h3>
+              <p>Entrega promedio</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img
+            src="./assets/img/photo-1550547660-d9450f859349.png"
+            alt="Hamburguesa Deliciosa"
+          />
+          <div class="shape shape-1"></div>
+          <div class="shape shape-2"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Free Delivery Banner -->
+    <section class="delivery-banner">
+      <div class="container">
+        <div class="delivery-content">
+          <div class="delivery-icon">
+            <i class="fas fa-truck"></i>
+          </div>
+          <div class="delivery-text">
+            <h3>¡Delivery Gratis en todos los pedidos!</h3>
+            <p>
+              En órdenes mayores a $15.00 en un radio de 5km. Tiempo de entrega
+              promedio: 30 min.
+            </p>
+          </div>
+          <a href="cobertura.html" class="btn btn-outline"
+            >Ver Zonas de Cobertura</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Menú Destacado Section -->
+    <section id="menu" class="features">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Nuestros Favoritos</span>
+          <h2 class="section-title">Menú Destacado</h2>
+          <p class="section-description">
+            Los productos más populares de nuestro menú
+          </p>
+        </div>
+
+        <div class="menu-grid">
+          <!-- Hamburguesa Clásica -->
+          <div class="product-card">
+            <div class="product-badge">Más Vendido</div>
+            <div class="product-image">
+              <img
+                src="./assets/img/photo-1568901346375-23c9450c58cd.png"
+                alt="Hamburguesa Clásica"
+              />
+              <button class="quick-view-btn">Vista Rápida</button>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Clásica</h3>
+              <p class="product-description">
+                Carne 100% res, queso cheddar, lechuga, tomate y salsa especial
+              </p>
+              <div class="product-footer">
+                <div class="product-price">$8.99</div>
+                <button class="btn btn-primary add-to-cart-btn">
+                  <i class="fas fa-plus"></i> Añadir
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Perro Caliente Gourmet -->
+          <div class="product-card">
+            <div class="product-badge trending">Tendencia</div>
+            <div class="product-image">
+              <img
+                src="./assets/img/photo-1568901346375-23c9450c58ct.png"
+                alt="Perro Caliente Chicago"
+              />
+              <button class="quick-view-btn">Vista Rápida</button>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Chicago Style</h3>
+              <p class="product-description">
+                Salchicha premium con toppings estilo Chicago
+              </p>
+              <div class="product-footer">
+                <div class="product-price">$7.99</div>
+                <button class="btn btn-primary add-to-cart-btn">
+                  <i class="fas fa-plus"></i> Añadir
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Combo Familiar -->
+          <div class="product-card">
+            <div class="product-badge">Oferta</div>
+            <div class="product-image">
+              <img
+                src="./assets/img/photo-1568901346375-1111.jpg"
+                alt="Combo Familiar"
+              />
+              <button class="quick-view-btn">Vista Rápida</button>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Combo Familiar</h3>
+              <p class="product-description">
+                3 hamburguesas, 2 perros calientes, papas y bebidas
+              </p>
+              <div class="product-footer">
+                <div class="product-price">$24.99</div>
+                <button class="btn btn-primary add-to-cart-btn">
+                  <i class="fas fa-plus"></i> Añadir
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center" style="margin-top: 40px">
+          <a href="menu.html" class="btn btn-outline">
+            Ver Menú Completo <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Testimonios</span>
+          <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+          <p class="section-description">
+            Más de 10,000 clientes satisfechos con nuestro servicio y calidad de
+            comida.
+          </p>
+        </div>
+
+        <!-- Carrusel Swiper -->
+        <div class="swiper testimonials-slider">
+          <div class="swiper-wrapper">
+            <!-- Testimonial 1 -->
+            <div class="swiper-slide testimonial-card">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">
+                "La mejor hamburguesa que he probado en mi vida. El servicio fue
+                rápido y la comida llegó caliente. ¡Definitivamente volveré a
+                ordenar!"
+              </p>
+              <div class="testimonial-author">
+                <img src="./assets/img/43.jpg" alt="Cliente satisfecho" />
+                <div>
+                  <h4>María González</h4>
+                  <span>Cliente frecuente</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="swiper-slide testimonial-card">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">
+                "Los perros calientes gourmet son increíbles. Tantas opciones de
+                toppings que puedo personalizarlo exactamente como me gusta.
+                ¡10/10!"
+              </p>
+              <div class="testimonial-author">
+                <img src="./assets/img/32.jpg" alt="Cliente satisfecho" />
+                <div>
+                  <h4>Carlos Mendoza</h4>
+                  <span>Primera vez</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="swiper-slide testimonial-card">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <p class="testimonial-text">
+                "Me encanta que tienen opciones vegetarianas que realmente saben
+                bien. La entrega siempre es puntual y la comida perfectamente
+                empacada."
+              </p>
+              <div class="testimonial-author">
+                <img src="./assets/img/65.jpg" alt="Cliente satisfecho" />
+                <div>
+                  <h4>Laura Jiménez</h4>
+                  <span>Cliente semanal</span>
+                </div>
+              </div>
+            </div>
+            <!-- Testimonial 4 -->
+            <div class="swiper-slide testimonial-card">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">
+                "Excelente atención al cliente y la comida es espectacular. Cada
+                bocado se siente fresco y lleno de sabor. ¡Recomendado!"
+              </p>
+              <div class="testimonial-author">
+                <img src="./assets/img/21.png" alt="Cliente satisfecho" />
+                <div>
+                  <h4>Andrés López</h4>
+                  <span>Amante del buen comer</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 5 -->
+            <div class="swiper-slide testimonial-card">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">
+                "Siempre ordeno aquí cuando quiero algo rápido y delicioso.
+                Nunca me han fallado. ¡Gracias por su constancia!"
+              </p>
+              <div class="testimonial-author">
+                <img src="./assets/img/17.png" alt="Cliente satisfecho" />
+                <div>
+                  <h4>Fernanda Ruiz</h4>
+                  <span>Cliente leal</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 6 -->
+            <div class="swiper-slide testimonial-card">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <p class="testimonial-text">
+                "Buena variedad en el menú y los postres son una delicia. Solo
+                mejoraría un poco los tiempos de espera en horas pico."
+              </p>
+              <div class="testimonial-author">
+                <img src="./assets/img/12.png" alt="Cliente satisfecho" />
+                <div>
+                  <h4>Jorge Ramírez</h4>
+                  <span>Visitante ocasional</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Paginación -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Ofertas Especiales</span>
+          <h2 class="section-title">Paquetes y promociones</h2>
+          <p class="section-description">
+            Combina tus favoritos y ahorra con nuestros paquetes especiales.
+          </p>
+        </div>
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3>Combo Individual</h3>
+              <div class="price">
+                <span>$</span>8.99
+                <span class="price-duration">/combo</span>
+              </div>
+            </div>
+            <ul class="pricing-features">
+              <li><i class="fas fa-check"></i> 1 Hamburguesa clásica</li>
+              <li><i class="fas fa-check"></i> 1 Porción de papas fritas</li>
+              <li><i class="fas fa-check"></i> 1 Bebida regular</li>
+              <li><i class="fas fa-check"></i> Entrega estándar</li>
+            </ul>
+            <a href="#" class="btn btn-outline">Ordenar Ahora</a>
+          </div>
+          <div class="pricing-card featured">
+            <div class="pricing-badge">Popular</div>
+            <div class="pricing-header">
+              <h3>Combo Familiar</h3>
+              <div class="price">
+                <span>$</span>24.99
+                <span class="price-duration">/combo</span>
+              </div>
+            </div>
+            <ul class="pricing-features">
+              <li><i class="fas fa-check"></i> 3 Hamburguesas clásicas</li>
+              <li><i class="fas fa-check"></i> 2 Perros calientes gourmet</li>
+              <li><i class="fas fa-check"></i> 2 Porciones grandes de papas</li>
+              <li><i class="fas fa-check"></i> 4 Bebidas regulares</li>
+              <li><i class="fas fa-check"></i> Entrega prioritaria</li>
+            </ul>
+            <a href="#" class="btn btn-primary">Ordenar Ahora</a>
+          </div>
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3>Combo Picante</h3>
+              <div class="price">
+                <span>$</span>12.99
+                <span class="price-duration">/combo</span>
+              </div>
+            </div>
+            <ul class="pricing-features">
+              <li><i class="fas fa-check"></i> 2 Hamburguesas picantes</li>
+              <li><i class="fas fa-check"></i> 1 Porción de aros de cebolla</li>
+              <li><i class="fas fa-check"></i> 2 Bebidas regulares</li>
+              <li><i class="fas fa-check"></i> Salsa picante exclusiva</li>
+            </ul>
+            <a href="#" class="btn btn-outline">Ordenar Ahora</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact-content">
+          <div class="contact-info">
+            <h2 class="section-title">¿Listo para ordenar?</h2>
+            <p class="section-description">
+              Descarga nuestra app o contáctanos directamente para hacer tu
+              pedido.
+            </p>
+            <div class="contact-methods">
+              <div class="contact-method">
+                <div class="contact-icon">
+                  <i class="fas fa-phone-alt"></i>
+                </div>
+                <div>
+                  <h4>Llámanos</h4>
+                  <p>+1 (555) 123-4567</p>
+                </div>
+              </div>
+              <div class="contact-method">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div>
+                  <h4>Correo electrónico</h4>
+                  <p>hola@fastbite.com</p>
+                </div>
+              </div>
+              <div class="contact-method">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div>
+                  <h4>Visítanos</h4>
+                  <p>Calle Comida 123, Ciudad Sabor</p>
+                </div>
+              </div>
+            </div>
+            <div class="app-download">
+              <p>Descarga nuestra app:</p>
+              <div class="app-btns">
+                <a href="#" class="app-btn">
+                  <i class="fab fa-apple"></i>
+                  <span>App Store</span>
+                </a>
+                <a href="#" class="app-btn">
+                  <i class="fab fa-google-play"></i>
+                  <span>Play Store</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form>
+              <div class="form-group">
+                <input type="text" placeholder="Nombre completo" required />
+              </div>
+              <div class="form-group">
+                <input type="email" placeholder="Correo electrónico" required />
+              </div>
+              <div class="form-group">
+                <input type="tel" placeholder="Teléfono" />
+              </div>
+              <div class="form-group">
+                <textarea
+                  placeholder="Tu mensaje o pedido especial..."
+                  rows="5"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Enviar Mensaje
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick View Modal -->
+    <div class="modal" id="quickViewModal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="modal-product">
+          <div class="modal-product-image">
+            <img id="modalProductImage" src="" alt="" />
+          </div>
+          <div class="modal-product-info">
+            <h2 id="modalProductTitle"></h2>
+            <p id="modalProductDescription"></p>
+            <div class="modal-product-price" id="modalProductPrice"></div>
+            <div class="modal-product-options">
+              <div class="quantity-selector">
+                <button class="quantity-btn minus">-</button>
+                <input type="number" value="1" min="1" class="quantity-input" />
+                <button class="quantity-btn plus">+</button>
+              </div>
+              <div class="size-options">
+                <h4>Tamaño:</h4>
+                <div class="size-btns">
+                  <button class="size-btn active">Pequeño</button>
+                  <button class="size-btn">Mediano</button>
+                  <button class="size-btn">Grande</button>
+                </div>
+              </div>
+              <div class="extras-options">
+                <h4>Extras:</h4>
+                <div class="extras-checkboxes">
+                  <label><input type="checkbox" /> Queso extra (+$1.00)</label>
+                  <label><input type="checkbox" /> Bacon extra (+$1.50)</label>
+                  <label><input type="checkbox" /> Guacamole (+$1.50)</label>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-primary add-to-cart-modal">
+              Añadir al Carrito - <span id="modalTotalPrice"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-col">
+            <a href="#" class="logo">Fast<span>Bite</span></a>
+            <p>
+              Comida rápida gourmet entregada en minutos. Satisfacción
+              garantizada o te devolvemos tu dinero.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Enlaces rápidos</h4>
+            <ul>
+              <li><a href="#home">Inicio</a></li>
+              <li><a href="menu.html">Menú</a></li>
+              <li><a href="#testimonials">Testimonios</a></li>
+              <li><a href="#pricing">Ofertas</a></li>
+              <li><a href="#contact">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#">Términos y condiciones</a></li>
+              <li><a href="#">Política de privacidad</a></li>
+              <li><a href="#">Política de reembolsos</a></li>
+              <li><a href="#">Preguntas frecuentes</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Horario</h4>
+            <ul>
+              <li>Lunes - Viernes: 10am - 10pm</li>
+              <li>Sábado: 11am - 11pm</li>
+              <li>Domingo: 11am - 9pm</li>
+            </ul>
+            <div class="payment-methods">
+              <i class="fab fa-cc-visa"></i>
+              <i class="fab fa-cc-mastercard"></i>
+              <i class="fab fa-cc-paypal"></i>
+              <i class="fab fa-cc-apple-pay"></i>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; FastBite. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/js/menu.js"></script>
+    <script src="./assets/js/scripts.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Inicializa Swiper -->
+    <script>
+      var swiper = new Swiper(".testimonials-slider", {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 30,
+        loop: true,
+        speed: 1300,
+        autoplay: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+          },
+          480: {
+            slidesPerView: 2,
+            slidesPerGroup: 1,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="icon" href="./assets/img/logo.png" type="image/png" />
+    <title>FastBite - Nuestro Menú</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- Header (igual que en la landing page) -->
+    <header class="header">
+      <div class="container">
+        <a href="index.html" class="logo">Fast<span>Bite</span></a>
+        <nav class="navbar">
+          <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Inicio</a></li>
+            <li><a href="menu.html" class="nav-link active">Menú</a></li>
+            <li>
+              <a href="index.html#testimonials" class="nav-link">Testimonios</a>
+            </li>
+            <li><a href="index.html#pricing" class="nav-link">Ofertas</a></li>
+            <li><a href="index.html#contact" class="nav-link">Contacto</a></li>
+          </ul>
+          <div class="nav-btns">
+            <a href="#" class="btn btn-outline">Iniciar Sesión</a>
+            <a href="#" class="btn btn-primary">Ordenar Ahora</a>
+          </div>
+        </nav>
+        <div class="hamburger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Menu Hero Section -->
+    <section class="menu-hero">
+      <div class="container">
+        <div class="menu-hero-content">
+          <h1>Nuestro Menú</h1>
+          <p>
+            Explora nuestra selección gourmet de hamburguesas, perros calientes
+            y acompañamientos
+          </p>
+          <div class="menu-filter">
+            <button class="filter-btn active" data-filter="all">Todo</button>
+            <button class="filter-btn" data-filter="hamburguesas">
+              Hamburguesas
+            </button>
+            <button class="filter-btn" data-filter="perros">
+              Perros Calientes
+            </button>
+            <button class="filter-btn" data-filter="acompanamientos">
+              Acompañamientos
+            </button>
+            <button class="filter-btn" data-filter="bebidas">Bebidas</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Grid Section -->
+    <section class="menu-grid-section">
+      <div class="container">
+        <!-- Hamburguesas -->
+        <div class="menu-category" id="hamburguesas">
+          <h2 class="category-title">Hamburguesas</h2>
+          <p class="category-description">
+            Preparadas con carne 100% res, pan artesanal y los mejores
+            ingredientes
+          </p>
+
+          <div class="menu-grid">
+            <!-- Product Card 1 -->
+            <div class="product-card" data-category="hamburguesas">
+              <div class="product-badge">Nuevo</div>
+              <div class="product-image">
+                <img
+                  src="./assets/img/photo-1568901346375-23c9450c58cd.png"
+                  alt="Hamburguesa Clásica"
+                />
+                <button class="quick-view-btn">Vista Rápida</button>
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">Clásica</h3>
+                <p class="product-description">
+                  Carne de res, queso cheddar, lechuga, tomate, cebolla y salsa
+                  especial
+                </p>
+                <div class="product-footer">
+                  <div class="product-price">$8.99</div>
+                  <button class="add-to-cart-btn">
+                    <i class="fas fa-plus"></i> Añadir
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="product-card" data-category="hamburguesas">
+              <div class="product-badge trending">Tendencia</div>
+              <div class="product-image">
+                <img
+                  src="./assets/img/photo-1565299507177-b0ac66763828.png"
+                  alt="Hamburguesa BBQ"
+                />
+                <button class="quick-view-btn">Vista Rápida</button>
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">BBQ Bacon</h3>
+                <p class="product-description">
+                  Doble carne, bacon crujiente, queso americano, cebolla
+                  caramelizada y salsa BBQ
+                </p>
+                <div class="product-footer">
+                  <div class="product-price">$10.99</div>
+                  <button class="add-to-cart-btn">
+                    <i class="fas fa-plus"></i> Añadir
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="product-card" data-category="hamburguesas">
+              <div class="product-image">
+                <img
+                  src="./assets/img/photo-1559847844-5315695dadae.png"
+                  alt="Hamburguesa Picante"
+                />
+                <button class="quick-view-btn">Vista Rápida</button>
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">Picante</h3>
+                <p class="product-description">
+                  Carne sazonada, jalapeños, queso pepper jack, salsa picante y
+                  mayonesa de chipotle
+                </p>
+                <div class="product-footer">
+                  <div class="product-price">$9.99</div>
+                  <button class="add-to-cart-btn">
+                    <i class="fas fa-plus"></i> Añadir
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="product-card" data-category="hamburguesas">
+              <div class="product-badge">Recomendado</div>
+              <div class="product-image">
+                <img
+                  src="./assets/img/photo-1571091718767-18b5b1457.png"
+                  alt="Hamburguesa Vegetariana"
+                />
+                <button class="quick-view-btn">Vista Rápida</button>
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">Vegetariana</h3>
+                <p class="product-description">
+                  Medallón de garbanzos, queso de cabra, aguacate, rúcula y
+                  tomate seco
+                </p>
+                <div class="product-footer">
+                  <div class="product-price">$8.49</div>
+                  <button class="add-to-cart-btn">
+                    <i class="fas fa-plus"></i> Añadir
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Perros Calientes -->
+        <div class="menu-category" id="perros">
+          <h2 class="category-title">Perros Calientes</h2>
+          <p class="category-description">
+            Salchichas premium con una variedad de toppings gourmet
+          </p>
+
+          <div class="menu-grid">
+            <!-- Product Card 1 -->
+            <div class="product-card" data-category="perros">
+              <div class="product-image">
+                <img
+                  src="./assets/img/photo-1619740455993-9e612b1af08a.png"
+                  alt="Perro Clásico"
+                />
+                <button class="quick-view-btn">Vista Rápida</button>
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">Clásico</h3>
+                <p class="product-description">
+                  Salchicha alemana, mostaza, ketchup, cebolla picada y
+                  pepinillos
+                </p>
+                <div class="product-footer">
+                  <div class="product-price">$6.99</div>
+                  <button class="add-to-cart-btn">
+                    <i class="fas fa-plus"></i> Añadir
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="product-card" data-category="perros">
+              <div class="product-badge trending">Tendencia</div>
+              <div class="product-image">
+                <img
+                  src="./assets/img/photo-1568901346375-23c9450c58ct.png"
+                  alt="Perro Chicago"
+                />
+                <button class="quick-view-btn">Vista Rápida</button>
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">Chicago Style</h3>
+                <p class="product-description">
+                  Salchicha Vienna, tomate, pepinillos, cebolla, relish, mostaza
+                  y pimentón
+                </p>
+                <div class="product-footer">
+                  <div class="product-price">$7.99</div>
+                  <button class="add-to-cart-btn">
+                    <i class="fas fa-plus"></i> Añadir
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="product-card" data-category="perros">
+              <div class="product-image">
+                <img
+                  src="./assets/img/481229204_649674537583171_1612359893552726922_n.jpg"
+                  alt="Perro Mexicano"
+                />
+                <button class="quick-view-btn">Vista Rápida</button>
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">Mexicano</h3>
+                <p class="product-description">
+                  Salchicha jalapeño, guacamole, pico de gallo, queso fundido y
+                  crema
+                </p>
+                <div class="product-footer">
+                  <div class="product-price">$7.49</div>
+                  <button class="add-to-cart-btn">
+                    <i class="fas fa-plus"></i> Añadir
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Acompañamientos -->
+        <div class="menu-category" id="acompanamientos">
+          <h2 class="category-title">Acompañamientos</h2>
+          <p class="category-description">
+            Perfectos para complementar tu comida
+          </p>
+
+          <div class="menu-grid">
+            <!-- Product Card 1 -->
+            <div class="product-card" data-category="acompanamientos">
+              <div class="product-image">
+                <img
+                  src="./assets/img/photo-1541592106381-b31e9677c0e5.png"
+                  alt="Papas Fritas"
+                />
+                <button class="quick-view-btn">Vista Rápida</button>
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">Papas Fritas</h3>
+                <p class="product-description">
+                  Crujientes papas fritas con cáscara y sal marina
+                </p>
+                <div class="product-footer">
+                  <div class="product-price">$3.99</div>
+                  <button class="add-to-cart-btn">
+                    <i class="fas fa-plus"></i> Añadir
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="product-card" data-category="acompanamientos">
+              <div class="product-image">
+                <img
+                  src="./assets/img/photo-534534543.png"
+                  alt="Aros de Cebolla"
+                />
+                <button class="quick-view-btn">Vista Rápida</button>
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">Aros de Cebolla</h3>
+                <p class="product-description">
+                  Crujientes aros de cebolla empanizados con salsa BBQ
+                </p>
+                <div class="product-footer">
+                  <div class="product-price">$4.49</div>
+                  <button class="add-to-cart-btn">
+                    <i class="fas fa-plus"></i> Añadir
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bebidas -->
+        <div class="menu-category" id="bebidas">
+          <h2 class="category-title">Bebidas</h2>
+          <p class="category-description">
+            Refrescantes bebidas para acompañar tu comida
+          </p>
+
+          <div class="menu-grid">
+            <!-- Product Card 1 -->
+            <div class="product-card" data-category="bebidas">
+              <div class="product-image">
+                <img
+                  src="./assets/img/photo-4687654634543.png"
+                  alt="Refrescos"
+                />
+                <button class="quick-view-btn">Vista Rápida</button>
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">Refrescos</h3>
+                <p class="product-description">
+                  Coca-Cola, Sprite, Fanta, Dr. Pepper (500ml)
+                </p>
+                <div class="product-footer">
+                  <div class="product-price">$2.49</div>
+                  <button class="add-to-cart-btn">
+                    <i class="fas fa-plus"></i> Añadir
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="product-card" data-category="bebidas">
+              <div class="product-image">
+                <img src="./assets/img/photo-64654463456.png" alt="Cervezas" />
+                <button class="quick-view-btn">Vista Rápida</button>
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">Cervezas Artesanales</h3>
+                <p class="product-description">
+                  Selección de cervezas locales (330ml)
+                </p>
+                <div class="product-footer">
+                  <div class="product-price">$4.99</div>
+                  <button class="add-to-cart-btn">
+                    <i class="fas fa-plus"></i> Añadir
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick View Modal -->
+    <div class="modal" id="quickViewModal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="modal-product">
+          <div class="modal-product-image">
+            <img id="modalProductImage" src="" alt="" />
+          </div>
+          <div class="modal-product-info">
+            <h2 id="modalProductTitle"></h2>
+            <p id="modalProductDescription"></p>
+            <div class="modal-product-price" id="modalProductPrice"></div>
+            <div class="modal-product-options">
+              <div class="quantity-selector">
+                <button class="quantity-btn minus">-</button>
+                <input type="number" value="1" min="1" class="quantity-input" />
+                <button class="quantity-btn plus">+</button>
+              </div>
+              <div class="size-options">
+                <h4>Tamaño:</h4>
+                <div class="size-btns">
+                  <button class="size-btn active">Pequeño</button>
+                  <button class="size-btn">Mediano</button>
+                  <button class="size-btn">Grande</button>
+                </div>
+              </div>
+              <div class="extras-options">
+                <h4>Extras:</h4>
+                <div class="extras-checkboxes">
+                  <label><input type="checkbox" /> Queso extra (+$1.00)</label>
+                  <label><input type="checkbox" /> Bacon extra (+$1.50)</label>
+                  <label><input type="checkbox" /> Guacamole (+$1.50)</label>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-primary add-to-cart-modal">
+              Añadir al Carrito - <span id="modalTotalPrice"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-col">
+            <a href="#" class="logo">Fast<span>Bite</span></a>
+            <p>
+              Comida rápida gourmet entregada en minutos. Satisfacción
+              garantizada o te devolvemos tu dinero.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Enlaces rápidos</h4>
+            <ul>
+              <li><a href="index.html#home">Inicio</a></li>
+              <li><a href="menu.html">Menú</a></li>
+              <li><a href="#testimonials">Testimonios</a></li>
+              <li><a href="#pricing">Ofertas</a></li>
+              <li><a href="#contact">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#">Términos y condiciones</a></li>
+              <li><a href="#">Política de privacidad</a></li>
+              <li><a href="#">Política de reembolsos</a></li>
+              <li><a href="#">Preguntas frecuentes</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Horario</h4>
+            <ul>
+              <li>Lunes - Viernes: 10am - 10pm</li>
+              <li>Sábado: 11am - 11pm</li>
+              <li>Domingo: 11am - 9pm</li>
+            </ul>
+            <div class="payment-methods">
+              <i class="fab fa-cc-visa"></i>
+              <i class="fab fa-cc-mastercard"></i>
+              <i class="fab fa-cc-paypal"></i>
+              <i class="fab fa-cc-apple-pay"></i>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; FastBite. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/js/menu.js"></script>
+  </body>
+</html>
