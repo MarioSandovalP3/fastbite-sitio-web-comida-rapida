@@ -1,4 +1,4 @@
-# Fast Bite - Página Web de Comida Rápida
+# Fast Bite - Sitio Web de Comida Rápida
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=plastic&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=plastic&logo=css3&logoColor=white)
@@ -7,7 +7,7 @@
 
 ![Inicio](preview/inicio.png)
 
-Fast Bite es una página web moderna para un restaurante de comida rápida, con menú interactivo, sistema de login y diseño responsive.
+Fast Bite es una sitio web moderna para un restaurante de comida rápida, con menú interactivo, sistema de login y diseño responsive.
 
 ## Características Principales
 - Página de inicio con promociones destacadas
